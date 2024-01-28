@@ -1,22 +1,26 @@
 import MyPackage1.Vehicle;
+import MyPackage1.Admin;
 
 public class First {
     public static void main(String[] args) {
-        Vehicle obj1 = new Vehicle(1, "Ram");
+        // Vehicle obj1 = new Vehicle(1, "Ram");
 
-        System.out.println("Id is: " + obj1.getId());
-        System.out.println("Name is: " + obj1.getName());
+        // System.out.println("Id is: " + obj1.getId());
+        // System.out.println("Name is: " + obj1.getName());
 
-        obj1.setId(11);
-        obj1.setName("Kumar");
+        // obj1.setId(11);
+        // obj1.setName("Kumar");
 
-        System.out.println("Id is: " + obj1.getId());
-        System.out.println("Name is: " + obj1.getName());
+        // System.out.println("Id is: " + obj1.getId());
+        // System.out.println("Name is: " + obj1.getName());
 
-        Vehicle obj2 = new Vehicle();
+        // Vehicle obj2 = new Vehicle();
 
-        System.out.println("Id is: " + obj2.getId());
-        System.out.println("Name is: " + obj2.getName());
+        // System.out.println("Id is: " + obj2.getId());
+        // System.out.println("Namee is: " + obj2.getName());
 
+        Admin obj3 = new Admin();
+        obj3.readData();
+        obj3.writeData();
     }
 }
