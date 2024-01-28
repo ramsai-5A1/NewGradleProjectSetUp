@@ -1,5 +1,6 @@
 import MyPackage1.Vehicle;
 import MyPackage1.Admin;
+import MyPackage1.SBIImpl;
 
 public class First {
     public static void main(String[] args) {
@@ -19,8 +20,12 @@ public class First {
         // System.out.println("Id is: " + obj2.getId());
         // System.out.println("Namee is: " + obj2.getName());
 
-        Admin obj3 = new Admin();
-        obj3.readData();
-        obj3.writeData();
+        // Admin obj3 = new Admin();
+        // obj3.readData();
+        // obj3.writeData();
+
+        SBIImpl obj4 = new SBIImpl();
+        obj4.addAccountNumber();
+        obj4.getBalance();
     }
 }
