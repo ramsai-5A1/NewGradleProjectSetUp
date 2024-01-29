@@ -3,6 +3,8 @@ import MyPackage1.Admin;
 import MyPackage1.SBIImpl;
 
 public class First {
+    
+
     public static void main(String[] args) {
         // Vehicle obj1 = new Vehicle(1, "Ram");
 
@@ -24,8 +26,28 @@ public class First {
         // obj3.readData();
         // obj3.writeData();
 
-        SBIImpl obj4 = new SBIImpl();
-        obj4.addAccountNumber();
-        obj4.getBalance();
+        // SBIImpl obj4 = new SBIImpl();
+        // obj4.addAccountNumber();
+        // obj4.getBalance();
+
+        System.out.println("Hello");
+        printMessage();
+        First obj = new First();
+        obj.printAge();
+    }
+
+    static void printMessage() {
+        System.out.println("Printed from static function");
+        First obj = new First();
+        obj.printLunch();
+    }
+
+    void printAge() {
+        System.out.println("My age is 55");
+        printLunch();
+    }
+
+    void printLunch() {
+        System.out.println("I ate lunch");
     }
 }
