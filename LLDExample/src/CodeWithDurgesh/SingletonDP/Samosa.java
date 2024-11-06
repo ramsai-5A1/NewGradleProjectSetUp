@@ -1,24 +1,30 @@
 package CodeWithDurgesh.SingletonDP;
 
-public class Samosa {
+public enum Samosa {
 
-    private static Samosa samosa;
+    INSTANCE;
 
-    private Samosa() {
-        if (samosa != null) {
-            throw new RuntimeException("You can't create another object");
-        }
-        System.out.println("Constructor is getting executed");
+    public void test() {
+        System.out.println("Test method is getting executed");
     }
+
+    // private static Samosa samosa;
+
+    // private Samosa() {
+    //     if (samosa != null) {
+    //         throw new RuntimeException("You can't create another object");
+    //     }
+    //     System.out.println("Constructor is getting executed");
+    // }
 
     // Lazy way of creating object
-    public static Samosa getSamosa() {
-        if (samosa == null) {
-            synchronized (Samosa.class) {
-                samosa = new Samosa();
-            }
-        }
-        return samosa;
-    }
+    // public static Samosa getSamosa() {
+    //     if (samosa == null) {
+    //         synchronized (Samosa.class) {
+    //             samosa = new Samosa();
+    //         }
+    //     }
+    //     return samosa;
+    // }
     
 }
