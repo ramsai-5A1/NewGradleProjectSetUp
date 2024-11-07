@@ -20,6 +20,15 @@ public class Main {
             System.out.println(networkConnection.hashCode());
             System.out.println(networkConnection2.hashCode());
             System.out.println(networkConnection3.hashCode());
+
+            networkConnection.addDomainName("www.atcoder.com");
+            networkConnection3.addDomainName("www.codechef.com");
+            
+            System.out.println(networkConnection);
+            System.out.println(networkConnection2);
+            System.out.println(networkConnection3);
+
+
         } catch (CloneNotSupportedException e) {
             e.printStackTrace();
         }
