@@ -27,6 +27,11 @@ public class WeatherStation implements IObservable {
         }
     }
 
+    public void changeState(int temperature) {
+        this.temperature = temperature;
+        notifyAllObservers();
+    }
+
     public int getTemperature() {
         return this.temperature;
     }

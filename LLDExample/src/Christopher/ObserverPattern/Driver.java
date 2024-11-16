@@ -6,7 +6,9 @@ public class Driver {
         IObserver observer2 = new MobileScreen2(observable);
         observable.add(observer1);
         observable.add(observer2);
-        observable.notifyAllObservers();
+        observable.changeState(89);
+        observable.changeState(99);
+        observable.changeState(85);
     }
 
 }
